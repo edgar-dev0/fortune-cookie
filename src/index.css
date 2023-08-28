@@ -33,12 +33,15 @@ body {
 
 .container {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-position: center center;
+  background-size: cover;
+
 }
 
 .container_phrase {
@@ -46,9 +49,11 @@ body {
   border-radius: 5px;
   padding: 8px 8px;
   margin: 12px;
-  font-size: 24px;
-  background-color: rgba(255, 219, 161, 0.6);
+  font-size: 28px;
+  font-weight: bolder;
+  background-color: rgba(255, 219, 161, 0.7);
   text-shadow: 2px 2px 2pt rgba(0, 0, 0, 0.6);
+  -webkit-text-stroke: 0.2px rgb(233, 221, 221);
 }
 
 
@@ -62,18 +67,23 @@ h1 {
 }
 
 button {
+  color: #ecc619;;
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 3px solid #ecc619;;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ff8b2c;
   cursor: pointer;
   transition: border-color 0.25s;
+  -webkit-box-shadow: 2px 2px 5px #999;
+  -moz-box-shadow: 2px 2px 5px #999;
+  /* -webkit-text-stroke: 0.5px #6a5612; */
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #6a5612;
+  color: #6a5612;
 }
 button:focus,
 button:focus-visible {
